@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+    <link rel="stylesheet" href="pro-menu.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div id="home"></div>
+    <header class="sticky-top ">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container" id="mainnav">
+        
+                <a href="" class="navbar-brand">
+                    <img class="img-fluid" src="image/logo1.png" width="40" alt="" loading="lazy" class="b-inline-block align-top">
+                    </a>
+        
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navebareCollapse" 
+                    aria-controls="navebareCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+        
+                <div class="collapse navbar-collapse text-center" id="navebareCollapse" >
+                    <ul class="navbar-nav  m-auto">
+                    <li class="nav-item text-center mx-auto py-2">
+                        <a class="text-decoration-none nav-link mx-2 fw-bolder" style="color: black;" href="beauty.html">Home</a>
+                    </li>
+                    <li class="nav-item text-center mx-auto py-2">
+                        <a class="text-decoration-none nav-link mx-2 fw-bolder" style="color: black;" href="beauty.html">About</a>
+                    </li>
+                    <li class="nav-item text-center mx-auto py-2">
+                        <a class="text-decoration-none nav-link mx-2 fw-bolder" style="color: black;" href="beauty.html">Product</a>
+                    </li>
+                    <li class="nav-item text-center mx-auto py-2">
+                        <a class="text-decoration-none nav-link mx-2 fw-bolder" style="color: black;" href="beauty.html">Our Story</a>
+                    </li>
+                    <li class="nav-item text-center mx-auto py-2">
+                        <a class="text-decoration-none nav-link mx-2 fw-bolder" style="color: black;" href="beauty.html">Reviews</a>
+                    </li>
+                    <li class="nav-item text-center mx-auto py-2">
+                        <a class="text-decoration-none nav-link mx-2 fw-bolder" style="color: black;" href="beauty.html">Contact</a>
+                    </li>
+                    
+                    </ul>
+
+                    <div class="text-center py-3">
+
+                        <button class="shop-btn px-3 py-2">
+                            <a href=""><i class="fa-solid fa-bag-shopping fa-lg" style="color: #8b62ae;"></i></a>
+                        </button>
+                        <button class="shop-btn px-3 py-2">
+                            <a href=""><i class="fa-solid fa-user fa-lg" style="color: #8b62ae;"></i></a>
+                        </button>
+                        <button class="border-0 px-4 py-2" style="background-color: #8b62ae; " id="signup">
+                            <a class="signup text-decoration-none fw-bolder text-white" style="font-size:17px ;" href="#signup">Sign Up</a>
+                        </button>
+
+                    </div>
+                   
+                    
+                </div>
+                
+                
+            </div>      
+        </nav>
+      
+    </header>
+
+
+    <section id="abo" style="background-image: url('image/about-bg1.jpg')">
+
+        <div class="d-flex justify-content-center " style="height: 70vh;">
+            <h1 class="fw-bolder text-white m-auto">SHOPPING</h1>
+        </div>
+
+    </section>
+
+    <section>
+
+        <div class="pro-det pt-4">
+
+            <div class="container-fluid my-5">
+                <div class="row">
+                  <div class="col-lg-3 col-md-12">
+          
+                    <div class="range-crd">
+        
+                      <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text fa-solid fa-magnifying-glass my-auto py-3" id="basic-addon1"></span>
+                          </div>
+                          <input type="text" class="form-control search-box" placeholder="Search Product" aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
+        
+                      <div class="py-2">
+                          <h5 class="fw-bolder">Product categories</h5>
+                          <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                              <label class="form-check-label" for="flexCheckDefault">
+                                  Lipstick
+                              </label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                              <label class="form-check-label" for="flexCheckDefault">
+                                  Face cream
+                              </label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                              <label class="form-check-label" for="flexCheckDefault">
+                                  Face wash
+                              </label>
+                          </div>
+                      </div>
+        
+                      <div>
+                              <h5 class="fw-bolder">Products Price Filter</h5>
+        
+                          <div class="">
+                              <input type="range" name="range" min="1" max="100" value="50" style="width: 400px;" class="range-field" id="myRange">
+                              <p class="fw-bolder ">Price: <span id="demo"> </span>$</p>
+                          </div>
+                      </div>
+                      
+                      
+                      
+                      
+              
+                    </div>
+                    
+                  </div>
+                  <div class="col-lg-9 col-md-12 ">
+          
+                    <div class="container">
+
+
+                        <div class="">
+                            <h5 class="fw-bolder">Showing all 5 results</h5>
+        
+                            <div class="py-3 d-flex justify-content-end">
+                                <select name="cars" class="py-2 px-5" id="cars">
+                                    <option value="volvo">Defaullt sorting</option>
+                                    <option value="saab">Lipstick</option>
+                                    <option value="opel">Face cream</option>
+                                    <option value="audi">Face wash</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div class="row list-wrapper">
+                          <div class="col-lg-4 col-md-6 col-sm-6 p-3 list-item">
+                              <div class="d-flex align-items-center justify-content-center">
+                                <a href="pro-details.html" class="text-decoration-none item">
+                                  <div class="card rounded-0 p-3" style="width: 280px;">         
+                                  
+                                      <div class="left-crd">
+                                          <h3 class="fw-bolder py-3 text-black">Lipstick</h3>
+                                      </div>
+                                  
+                                  <div class="prod-img text-center" >
+                                      <img class="img-fluid rounded-circle mx-auto" style="width: 200px; height: 200px;" src="image/product/pro1.jpeg" alt="">
+                                  </div>
+                                  <div class="text-end py-4">
+                                      <a class="py-2 px-3 rounded-2 text-decoration-none fw-bolder text-white" style="background-color: #8b62ae;" href="">$31 Buy</a>
+                                  </div>
+                                            
+                                
+                              </div>
+                                </a>
+                              </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 col-sm-6 p-3 list-item">
+                              <div class="d-flex align-items-center justify-content-center">
+                                <a href="pro-details.html" class="text-decoration-none item">
+                                  <div class="card rounded-0 p-3" style="width: 280px;">         
+                                  
+                                      <div class="left-crd">
+                                          <h3 class="fw-bolder py-3 text-black">Perfume</h3>
+                                      </div>
+                                  
+                                  <div class="prod-img text-center" >
+                                      <img class="img-fluid rounded-circle mx-auto" style="width: 200px; height: 200px;" src="image/product/pro2.jpeg" alt="">
+                                  </div>
+                                  <div class="text-end py-4">
+                                      <a class="py-2 px-3 rounded-2 text-decoration-none fw-bolder text-white" style="background-color: #8b62ae;" href="">$12 Buy</a>
+                                  </div>
+                                            
+                                
+                              </div>
+                                </a>
+                              </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 col-sm-6 p-3 list-item">
+                              <div class="d-flex align-items-center justify-content-center">
+                                <a href="pro-details.html" class="text-decoration-none item">
+                                  <div class="card rounded-0 p-3" style="width: 280px;">         
+                                  
+                                      <div class="left-crd">
+                                          <h3 class="fw-bolder py-3 text-black">Jaguar</h3>
+                                      </div>
+                                  
+                                  <div class="prod-img text-center" >
+                                      <img class="img-fluid rounded-circle mx-auto" style="width: 200px; height: 200px;" src="image/product/pro3.jpeg" alt="">
+                                  </div>
+                                  <div class="text-end py-4">
+                                      <a class="py-2 px-3 rounded-2 text-decoration-none fw-bolder text-white" style="background-color: #8b62ae;" href="">$20 Buy</a>
+                                  </div>
+                                            
+                                
+                              </div>
+                                </a>
+                              </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 col-sm-6 p-3 list-item">
+                              <div class="d-flex align-items-center justify-content-center">
+                                <a href="pro-details.html" class="text-decoration-none item">
+                                  <div class="card rounded-0 p-3" style="width: 280px;">         
+                                  
+                                      <div class="left-crd">
+                                          <h3 class="fw-bolder py-3 text-black">Marula Oil</h3>
+                                      </div>
+                                  
+                                  <div class="prod-img text-center" >
+                                      <img class="img-fluid rounded-circle mx-auto" style="width: 200px; height: 200px;" src="image/product/pro4.jpeg" alt="">
+                                  </div>
+                                  <div class="text-end py-4">
+                                      <a class="py-2 px-3 rounded-2 text-decoration-none fw-bolder text-white" style="background-color: #8b62ae;" href="">$02 Buy</a>
+                                  </div>
+                                            
+                                
+                              </div>
+                                </a>
+                              </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 col-sm-6 p-3 list-item">
+                              <div class="d-flex align-items-center justify-content-center">
+                                <a href="pro-details.html" class="text-decoration-none item">
+                                  <div class="card rounded-0 p-3" style="width: 280px;">         
+                                  
+                                      <div class="left-crd">
+                                          <h3 class="fw-bolder py-3 text-black">Lipstick</h3>
+                                      </div>
+                                  
+                                  <div class="prod-img text-center" >
+                                      <img class="img-fluid rounded-circle mx-auto" style="width: 200px; height: 200px;" src="image/product/pro5.jpeg" alt="">
+                                  </div>
+                                  <div class="text-end py-4">
+                                      <a class="py-2 px-3 rounded-2 text-decoration-none fw-bolder text-white" style="background-color: #8b62ae;" href="">$10 Buy</a>
+                                  </div>
+                                            
+                                
+                              </div>
+                                </a>
+                              </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 col-sm-6 p-3 list-item">
+                              <div class="d-flex align-items-center justify-content-center">
+                                <a href="pro-details.html" class="text-decoration-none item">
+                                  <div class="card rounded-0 p-3" style="width: 280px;">         
+                                  
+                                      <div class="left-crd">
+                                          <h3 class="fw-bolder py-3 text-black">Camellia Oil</h3>
+                                      </div>
+                                  
+                                  <div class="prod-img text-center" >
+                                      <img class="img-fluid rounded-circle mx-auto" style="width: 200px; height: 200px;" src="image/product/pro6.jpeg" alt="">
+                                  </div>
+                                  <div class="text-end py-4">
+                                      <a class="py-2 px-3 rounded-2 text-decoration-none fw-bolder text-white" style="background-color: #8b62ae;" href="">$15 Buy</a>
+                                  </div>
+                                            
+                                
+                              </div>
+                                </a>
+                              </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 col-sm-6 p-3 list-item">
+                              <div class="d-flex align-items-center justify-content-center">
+                                <a href="pro-details.html" class="text-decoration-none item">
+                                  <div class="card rounded-0 p-3" style="width: 280px;">         
+                                  
+                                      <div class="left-crd">
+                                          <h3 class="fw-bolder py-3 text-black">Jojoba Oil</h3>
+                                      </div>
+                                  
+                                  <div class="prod-img text-center" >
+                                      <img class="img-fluid rounded-circle mx-auto" style="width: 200px; height: 200px;" src="image/product/pro7.jpeg" alt="">
+                                  </div>
+                                  <div class="text-end py-4">
+                                      <a class="py-2 px-3 rounded-2 text-decoration-none fw-bolder text-white" style="background-color: #8b62ae;" href="">$24 Buy</a>
+                                  </div>
+                                            
+                                
+                              </div>
+                                </a>
+                              </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 col-sm-6 p-3 list-item">
+                              <div class="d-flex align-items-center justify-content-center">
+                                <a href="pro-details.html" class="text-decoration-none item">
+                                  <div class="card rounded-0 p-3" style="width: 280px;">         
+                                  
+                                      <div class="left-crd">
+                                          <h3 class="fw-bolder py-3 text-black">Perfume</h3>
+                                      </div>
+                                  
+                                  <div class="prod-img text-center" >
+                                      <img class="img-fluid rounded-circle mx-auto" style="width: 200px; height: 200px;" src="image/product/pro8.jpeg" alt="">
+                                  </div>
+                                  <div class="text-end py-4">
+                                      <a class="py-2 px-3 rounded-2 text-decoration-none fw-bolder text-white" style="background-color: #8b62ae;" href="">$10 Buy</a>
+                                  </div>
+                                            
+                                
+                              </div>
+                                </a>
+                              </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 col-sm-6 p-3 list-item">
+                              <div class="d-flex align-items-center justify-content-center">
+                                <a href="pro-details.html" class="text-decoration-none item">
+                                  <div class="card rounded-0 p-3" style="width: 280px;">         
+                                  
+                                      <div class="left-crd">
+                                          <h3 class="fw-bolder py-3 text-black">Mancera</h3>
+                                      </div>
+                                  
+                                  <div class="prod-img text-center" >
+                                      <img class="img-fluid rounded-circle mx-auto" style="width: 200px; height: 200px;" src="image/product/pro9.jpeg" alt="">
+                                  </div>
+                                  <div class="text-end py-4">
+                                      <a class="py-2 px-3 rounded-2 text-decoration-none fw-bolder text-white" style="background-color: #8b62ae;" href="">$12 Buy</a>
+                                  </div>
+                                            
+                                
+                              </div>
+                                </a>
+                              </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 col-sm-6 p-3 list-item">
+                              <div class="d-flex align-items-center justify-content-center">
+                                <a href="pro-details.html" class="text-decoration-none item">
+                                  <div class="card rounded-0 p-3" style="width: 280px;">         
+                                  
+                                      <div class="left-crd">
+                                          <h3 class="fw-bolder py-3 text-black">Mamaearth</h3>
+                                      </div>
+                                  
+                                  <div class="prod-img text-center" >
+                                      <img class="img-fluid rounded-circle mx-auto" style="width: 200px; height: 200px;" src="image/product/pro10.jpeg" alt="">
+                                  </div>
+                                  <div class="text-end py-4">
+                                      <a class="py-2 px-3 rounded-2 text-decoration-none fw-bolder text-white" style="background-color: #8b62ae;" href="">$14 Buy</a>
+                                  </div>
+                                            
+                                
+                              </div>
+                                </a>
+                              </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 col-sm-6 p-3 list-item">
+                              <div class="d-flex align-items-center justify-content-center">
+                                <a href="pro-details.html" class="text-decoration-none item">
+                                  <div class="card rounded-0 p-3" style="width: 280px;">         
+                                  
+                                      <div class="left-crd">
+                                          <h3 class="fw-bolder py-3 text-black">Camellia Oil</h3>
+                                      </div>
+                                  
+                                  <div class="prod-img text-center" >
+                                      <img class="img-fluid rounded-circle mx-auto" style="width: 200px; height: 200px;" src="image/product/pro11.jpeg" alt="">
+                                  </div>
+                                  <div class="text-end py-4">
+                                      <a class="py-2 px-3 rounded-2 text-decoration-none fw-bolder text-white" style="background-color: #8b62ae;" href="">$17 Buy</a>
+                                  </div>
+                                            
+                                
+                              </div>
+                                </a>
+                              </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 col-sm-6 p-3 list-item">
+                              <div class="d-flex align-items-center justify-content-center">
+                                <a href="pro-details.html" class="text-decoration-none item">
+                                  <div class="card rounded-0 p-3" style="width: 280px;">         
+                                  
+                                      <div class="left-crd">
+                                          <h3 class="fw-bolder py-3 text-black">Jojoba Oil</h3>
+                                      </div>
+                                  
+                                  <div class="prod-img text-center" >
+                                      <img class="img-fluid rounded-circle mx-auto" style="width: 200px; height: 200px;" src="image/product/pro12.jpeg" alt="">
+                                  </div>
+                                  <div class="text-end py-4">
+                                      <a class="py-2 px-3 rounded-2 text-decoration-none fw-bolder text-white" style="background-color: #8b62ae;" href="">$13 Buy</a>
+                                  </div>
+                                            
+                                
+                              </div>
+                                </a>
+                              </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 col-sm-6 p-3 list-item">
+                              <div class="d-flex align-items-center justify-content-center">
+                                <a href="pro-details.html" class="text-decoration-none item">
+                                  <div class="card rounded-0 p-3" style="width: 280px;">         
+                                  
+                                      <div class="left-crd">
+                                          <h3 class="fw-bolder py-3 text-black">Walnut Oil</h3>
+                                      </div>
+                                  
+                                  <div class="prod-img text-center" >
+                                      <img class="img-fluid rounded-circle mx-auto" style="width: 200px; height: 200px;" src="image/product/pro13.jpeg" alt="">
+                                  </div>
+                                  <div class="text-end py-4">
+                                      <a class="py-2 px-3 rounded-2 text-decoration-none fw-bolder text-white" style="background-color: #8b62ae;" href="">$22 Buy</a>
+                                  </div>
+                                            
+                                
+                              </div>
+                                </a>
+                              </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 col-sm-6 p-3 list-item">
+                              <div class="d-flex align-items-center justify-content-center">
+                                <a href="pro-details.html" class="text-decoration-none item">
+                                  <div class="card rounded-0 p-3" style="width: 280px;">         
+                                  
+                                      <div class="left-crd">
+                                          <h3 class="fw-bolder py-3 text-black">Glow Capsules</h3>
+                                      </div>
+                                  
+                                  <div class="prod-img text-center" >
+                                      <img class="img-fluid rounded-circle mx-auto" style="width: 200px; height: 200px;" src="image/product/pro14.jpeg" alt="">
+                                  </div>
+                                  <div class="text-end py-4">
+                                      <a class="py-2 px-3 rounded-2 text-decoration-none fw-bolder text-white" style="background-color: #8b62ae;" href="">$12 Buy</a>
+                                  </div>
+                                            
+                                
+                              </div>
+                                </a>
+                              </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 col-sm-6 p-3 list-item">
+                              <div class="d-flex align-items-center justify-content-center">
+                                <a href="pro-details.html" class="text-decoration-none item">
+                                  <div class="card rounded-0 p-3" style="width: 280px;">         
+                                  
+                                      <div class="left-crd">
+                                          <h3 class="fw-bolder py-3 text-black">Charcoal Cream</h3>
+                                      </div>
+                                  
+                                  <div class="prod-img text-center" >
+                                      <img class="img-fluid rounded-circle mx-auto" style="width: 200px; height: 200px;" src="image/product/pro15.jpeg" alt="">
+                                  </div>
+                                  <div class="text-end py-4">
+                                      <a class="py-2 px-3 rounded-2 text-decoration-none fw-bolder text-white" style="background-color: #8b62ae;" href="">$20 Buy</a>
+                                  </div>
+                                            
+                                
+                              </div>
+                                </a>
+                              </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 col-sm-6 p-3 list-item">
+                              <div class="d-flex align-items-center justify-content-center">
+                                <a href="pro-details.html" class="text-decoration-none item">
+                                  <div class="card rounded-0 p-3" style="width: 280px;">         
+                                  
+                                      <div class="left-crd">
+                                          <h3 class="fw-bolder py-3 text-black">Kumkumadi Oil</h3>
+                                      </div>
+                                  
+                                  <div class="prod-img text-center" >
+                                      <img class="img-fluid rounded-circle mx-auto" style="width: 200px; height: 200px;" src="image/product/pro16.jpeg" alt="">
+                                  </div>
+                                  <div class="text-end py-4">
+                                      <a class="py-2 px-3 rounded-2 text-decoration-none fw-bolder text-white" style="background-color: #8b62ae;" href="">$12 Buy</a>
+                                  </div>
+                                            
+                                
+                              </div>
+                                </a>
+                              </div>
+                          </div>
+                          
+                          
+                        </div>
+                      
+                      <div id="pagination-container" class="text-center pt-5"></div>
+                      
+                      
+                      </div>
+          
+                  </div>
+                </div>
+               
+            </div>
+    
+        </div>
+
+    </section>
+
+
+    <section class="mt-5" id="foot" style="background-image: url('image/about-footer-bg1.jpg');">
+
+        <div class="container text-white d-flex justify-content-center mt-5 pt-5">
+            <div class="row text-center mt-5 pt-5">
+                <div class="col-lg-3 col-md-6 col-sm-12 pb-3">
+                    <h4 class="fw-bolder text-center">Company</h4>
+                    <p class="mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aliquid ullam minima accusantium inventore saepe aspernatur veritatis dolor nulla iste
+                        tenetur cupiditate labore, consequuntur deserunt eligendi distinctio, ad, dolore aut. Libero.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 pb-3">
+                    <h4 class="fw-bolder text-center">Categories</h4>
+                    <a href="" class="text-decoration-none" style="color: white;"><li class="list-group-item">Face mask</li></a>
+                    <a href="" class="text-decoration-none" style="color: white;"><li class="list-group-item">Lip care</li></a>
+                    <a href="" class="text-decoration-none" style="color: white;"><li class="list-group-item">Eye shadow</li></a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 pb-3">
+                    <h4 class="fw-bolder text-center">Quick Links</h4>
+                    <a href="#" class="text-decoration-none" style="color: white;"><li class="list-group-item">Home</li></a>
+                    <a href="#" class="text-decoration-none" style="color: white;"><li class="list-group-item">About</li></a>
+                    <a href="#" class="text-decoration-none" style="color: white;"><li class="list-group-item">Shop</li></a>
+                    <a href="#" class="text-decoration-none" style="color: white;"><li class="list-group-item">Contect Us</li></a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 pb-3">
+                    <h4 class="fw-bolder text-center">Contact</h4>
+                    <div class="d-flex mx-5">
+                        <i class="fas fa-home my-1"></i>
+                        <p class="text-start mx-2">4671 Sugar Camp Road,<br>
+                        Owatonna, Minnesota,
+                        55060</p>
+                    </div>
+                    
+                    <div class="d-flex mx-5">
+                        <i class="fas fa-phone  my-1"></i>
+                        <p class="my-auto mx-2">571-457-2321</p> 
+                    </div>
+                    
+                    <div class="d-flex mx-5">
+                        <i class="fas fa-envelope my-1"></i>
+                        <p class="my-auto mx-2">demo@gmail.com</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="py-3">
+            <p class=" text-white text-center">Copyright © 2024 Gatelogsystem</p>
+        </div>
+
+    </section>
+    
+
+
+    <script type="text/JavaScript">
+        let first = document.getElementById("first")
+        let two = document.getElementById("two")
+        let three = document.getElementById("three")
+        let heading = document.getElementById("heading")
+
+        window.addEventListener('scroll',function(){
+            var value = window.scrollY;
+            
+            first.style.top = value*0.5+'px';
+            two.style.top = value*0.3+'px';
+            three.style.bottom = value*0.3+'px';
+            heading.style.top = value*1+'px';
+        })
+                                        
+
+
+        window.addEventListener('scroll',()=>{
+        let container=document.getElementById("mainnav");
+        container.classList.toggle('sticky',window.scrollY > 0)
+
+       
+        
+})
+
+
+
+    </script>
+
+
+    <script>
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("demo");
+    output.innerHTML = slider.value;
+    
+    slider.oninput = function() {
+      output.innerHTML = this.value;
+    }
+    </script>
+
+    <script src="pro-menu.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <script src="assets/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/jquery.simplePagination.min.js"></script>
+
+<script>
+
+var items = $(".list-wrapper .list-item");
+    var numItems = items.length;
+    var perPage = 6;
+
+    items.slice(perPage).hide();
+
+    $('#pagination-container').pagination({
+        items: numItems,
+        itemsOnPage: perPage,
+        prevText: "&laquo;",
+        nextText: "&raquo;",
+        onPageClick: function (pageNumber) {
+            var showFrom = perPage * (pageNumber - 1);
+            var showTo = showFrom + perPage;
+            items.hide().slice(showFrom, showTo).show();
+        }
+    });
+
+</script>
+    
+
+</body>
+</html>
